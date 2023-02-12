@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.mavenproject1;
+
+/**
+ *
+ * @author Paul
+ */
+public class Sales {
+        int productNumber, quantity;
+    double total;
+
+    public void addProduct(int productNo, int quantity){
+        switch(productNumber){
+            case 1 -> total += (2.98 * quantity);
+            case 2 -> total += (4.50 * quantity);
+            case 3 -> total += (9.98 * quantity);
+            case 4 -> total += (4.49 * quantity);
+            case 5 -> total += (6.87 * quantity);
+            default -> {
+              }       
+         }
+    }
+
+    // GETTERS
+    public double getTotal(){
+        return total;
+    }
+}
